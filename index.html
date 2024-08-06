@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drones</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+<a-asset-item src="buster_drone/scene.gltf" id="buster"></a-asset-item>
+<a-asset-item src="s9_mini_drone/scene.gltf" id="s9mini"></a-asset-item>
+<a-asset-item src="scientific_lab/scene.gltf" id="lab"></a-asset-item>
+<a-asset-item src="scifi_drone_1.1/scene.gltf" id="scifi"></a-asset-item>
+        </a-assets>
+
+<a-entity gltf-model="#lab" position:="10 3 10" scale="3 3 3"></a-entity>
+<a-entity gltf-model="#s9mini" position="-20 8 20" animation-mixer></a-entity>
+<a-entity gltf-model="#buster" scale="3 3 3" position="-40 8 20" animation-mixer></a-entity>
+<a-entity gltf-model="#scifi" position="-60 8 20" scale="0.03 0.03 0.03" animation-mixer></a-entity>
+<a-camera position="0 5 15" look-controls-enabled wasd-controls="fly:true"></a-camera>
+    </a-scene>
+</body>
+</html>
